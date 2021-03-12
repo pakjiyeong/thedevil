@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .img {
+            width: 100%;
+            margin-top: -5px;
+        }
+        .img img {
+            width: 100%;
+        }
+        .img3 {
+            text-align: center;
+            background-image: url(images/img3-bg.jpg);
+        }
+        .img3 video {
+            width: 50%;
+        }        
+        .img5 {
+            width: 100%;
+            height: 817px;
+            background-image: url(images/image05.jpg);
+        }
+        .container {
+            padding: 0 6%;
+        }
+        .input-lg {
+            height: 50px;
+        }
+        .check {
+            padding-left: 15px;
+        }
+        #check {
+            margin: 7px;
+        }
+        .btn {
+            width: 100%;
+            display: block;
+            margin: 50px auto;
+            border-radius: 30px;
+            padding: 15px 20px;
+            font-weight: bold;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="img">
+            <img src="images/image01.jpg" alt="images">
+        </div>
+        <div class="img">
+            <img src="images/image02.jpg" alt="images">
+        </div>
+        <div class="img img3">
+            <video autoplay loop muted preload="auto">
+                <source src="videos/The Devil Wears Prada.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="img">
+            <img src="images/image04.jpg" alt="images">
+        </div>
+        <div class="img img5">
+            <div class="container">
+                <form>
+                    <div class="row justify-content-between py-5">
+                        <div class="col-md-6 p-2">
+                            <input type="text" class="form-control input-lg" id="email" placeholder="이름" name="email">
+                        </div>
+                        <div class="col-md-6 p-2">
+                            <input type="tel" class="form-control input-lg" placeholder="연락처 예)010-1234-1234" name="pswd">
+                        </div>
+                    </div>
+                    <div class="row p-2">
+                        <textarea name="url" id="url" class="form-control input-lg" rows="10" placeholder="공유 URL을 입력하세요."></textarea>
+                    </div>
+                    <div class="row check">
+                        <input type="checkbox" id="check">
+                        <label for="check">개인정보 수집 및 이용을 확인하였고 이에 동의합니다.</label>
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark btn-lg">응모하기</button>
+                </form>
+            </div>
+        </div>
+        <div class="img">
+            <img src="images/image06.jpg" alt="images">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
